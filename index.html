@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Versión de prueba: que Google no la indexe. Borra la línea siguiente cuando sea la web oficial de la clínica. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#080B26">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232D3574'/%3E%3Cpath fill='%23fff' d='M5 5h22v4.4H9.4v4.4H27v4.4H9.4v4.4H27V27H5z'/%3E%3C/svg%3E">
+<meta property="og:title" content="Dra. Leticia López-Areal · Clínica oftalmológica en Bilbao">
+<meta property="og:description" content="Consulta de oftalmología en la Gran Vía de Bilbao desde 1982. Revisiones, cataratas, cirugía refractiva y de párpados.">
+<meta property="og:locale" content="es_ES">
+<title>Clínica Oftalmológica López-Areal</title>
+<meta name="description" content="Consulta de oftalmología de la Dra. Leticia López-Areal en la Gran Vía de Bilbao desde 1982. Revisiones, cataratas, cirugía refractiva y de párpados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Retícula: hero nocturno a sangre con el ojo como pieza central; debajo, secciones claras en un contenedor de 1320px con tarjetas de 32px y detalles de optotipo. */
+:root{
+  --paper:#F4F5FA; --surface:#EAECF5; --surface-2:#DFE2EF; --field:#FFFFFF;
+  --ink:#1B1F3F; --ink-max:#0C0F2B; --muted:#5F658B; --hairline:rgba(27,31,63,.11);
+  --accent:#6E86F2; --accent-ink:#3545B0; --brand:#2D3574; --mark:#2D3574;
+  --btn:#0C0F2B; --btn-fg:#FFFFFF; --btn-hover:#222868;
+  --star:#DE9B12; --star-off:rgba(27,31,63,.14);
+  --band:#0C0F2B; --band-fg:#FFFFFF; --map-road:#F4F5FA; --map-water:rgba(110,134,242,.26); --map-park:rgba(110,134,242,.14);
+  --duo-r:#C4473E; --duo-g:#3C8A5A;
+  --night:#080B26; --night-2:#111852; --night-3:#1E2A7C; --ice:#EEF1FF;
+  --font-display:'Hanken Grotesk','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --stars-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath transform='translate(0 0)' d='M10 1.2l2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8l-5.3 2.9 1.1-6L1.4 7.5l6-.8z'/%3E%3Cpath transform='translate(20 0)' d='M10 1.2l2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8l-5.3 2.9 1.1-6L1.4 7.5l6-.8z'/%3E%3Cpath transform='translate(40 0)' d='M10 1.2l2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8l-5.3 2.9 1.1-6L1.4 7.5l6-.8z'/%3E%3Cpath transform='translate(60 0)' d='M10 1.2l2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8l-5.3 2.9 1.1-6L1.4 7.5l6-.8z'/%3E%3Cpath transform='translate(80 0)' d='M10 1.2l2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8l-5.3 2.9 1.1-6L1.4 7.5l6-.8z'/%3E%3C/svg%3E");
+  --r-card:32px; --r-media:26px; --r-tile:20px; --r-pill:999px;
+  --shell:1320px; --pad:40px; --gap:24px;
+  --ease-expo:cubic-bezier(.16,1,.3,1); --ease-quint:cubic-bezier(.22,1,.36,1); --dur-fast:220ms;
+  --fs-section:clamp(38px,5.6vw,84px); --fs-statement:clamp(27px,3.2vw,48px); --fs-lead:clamp(15px,1.1vw,17px);
+  --fs-stat:clamp(34px,4.2vw,62px); --fs-micro:11px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#090C22; --surface:#11153A; --surface-2:#181D48; --field:#0D1130;
+    --ink:#E4E6F5; --ink-max:#FFFFFF; --muted:#989DC2; --hairline:rgba(228,230,245,.12);
+    --accent:#8EA0FF; --accent-ink:#B1BDFF; --brand:#2D3574; --mark:#9AABFF;
+    --btn:#EEF0FF; --btn-fg:#0C0F2B; --btn-hover:#FFFFFF;
+    --star:#F2C14E; --star-off:rgba(228,230,245,.18);
+    --band:#181D48; --band-fg:#FFFFFF; --map-road:#090C22; --map-water:rgba(142,160,255,.22); --map-park:rgba(142,160,255,.12);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#090C22; --surface:#11153A; --surface-2:#181D48; --field:#0D1130;
+  --ink:#E4E6F5; --ink-max:#FFFFFF; --muted:#989DC2; --hairline:rgba(228,230,245,.12);
+  --accent:#8EA0FF; --accent-ink:#B1BDFF; --brand:#2D3574; --mark:#9AABFF;
+  --btn:#EEF0FF; --btn-fg:#0C0F2B; --btn-hover:#FFFFFF;
+  --star:#F2C14E; --star-off:rgba(228,230,245,.18);
+    --band:#181D48; --band-fg:#FFFFFF; --map-road:#090C22; --map-water:rgba(142,160,255,.22); --map-park:rgba(142,160,255,.12);
+  color-scheme:dark;
+}
+@media (max-width:1279px){ :root{ --pad:32px; --gap:20px; --r-card:28px; } }
+@media (max-width:899px){ :root{ --pad:24px; } }
+@media (max-width:599px){ :root{ --pad:18px; --r-card:22px; --r-media:20px; } }
+
+html{overflow-x:clip;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:15px;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:clip}
+*{box-sizing:border-box} h1,h2,h3,p,ul,figure,blockquote{margin:0} ul{padding:0;list-style:none}
+button,input,select{font:inherit} button{cursor:pointer}
+a{color:var(--accent-ink);text-decoration:none} a:hover{text-decoration:underline;text-underline-offset:3px}
+a[href^="tel:"]{white-space:nowrap}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+img,svg{display:block}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *,*::before,*::after{animation:none!important;transition:none!important} }
+
+@keyframes reveal{from{transform:translateY(115%)}to{transform:translateY(0)}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes settle{from{opacity:0;transform:translateY(10px) scale(.965)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes pulsering{from{transform:scale(.6);opacity:.7}to{transform:scale(1.9);opacity:0}}
+
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.micro{font:500 var(--fs-micro)/1 var(--font-mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+
+/* ---------- Botones ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border:0;border-radius:var(--r-pill);font:500 15px/1 var(--font-body);letter-spacing:-.01em;white-space:nowrap;text-decoration:none;transition:background-color var(--dur-fast) ease,transform var(--dur-fast) var(--ease-quint)}
+.btn:hover{text-decoration:none}
+.btn-light{background:#FFFFFF;color:#0C0F2B}
+.btn-light:hover{background:#E9ECFF;color:#0C0F2B;transform:translateY(-2px)}
+.btn-dark{background:var(--btn);color:var(--btn-fg)}
+.btn-dark:hover{background:var(--btn-hover);color:var(--btn-fg);transform:translateY(-2px)}
+.btn[disabled]{opacity:.6;cursor:progress;transform:none}
+.btn .arr{display:inline-block;transition:transform var(--dur-fast) var(--ease-quint)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn svg{flex:none}
+
+/* ---------- Cabecera ---------- */
+.site-header{position:absolute;top:0;left:0;right:0;z-index:40;pointer-events:none}
+.hdr{max-width:var(--shell);margin-inline:auto;padding-inline:var(--pad);height:88px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+.hdr > *{pointer-events:auto}
+.brand{grid-column:1;justify-self:start;display:inline-flex;align-items:center;gap:12px;color:#FFFFFF;text-decoration:none;animation:settle 620ms var(--ease-quint) both}
+.brand:hover{color:#FFFFFF;text-decoration:none}
+.brand-mark{width:32px;height:auto;fill:currentColor;flex:none}
+.brand-text{display:grid;gap:5px}
+.brand-name{font:700 16px/1 var(--font-display);letter-spacing:-.02em;white-space:nowrap}
+.brand-desc{font:500 9.5px/1 var(--font-body);text-transform:uppercase;letter-spacing:.2em;opacity:.7;white-space:nowrap}
+.nav{grid-column:2;display:flex;gap:2px;padding:6px;border-radius:var(--r-pill);background:rgba(255,255,255,.12);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);animation:settle 620ms var(--ease-quint) 80ms both}
+.nav a{padding:10px 16px;border-radius:var(--r-pill);font:500 14px/1 var(--font-body);color:rgba(255,255,255,.76);transition:color var(--dur-fast) ease,background-color var(--dur-fast) ease;text-decoration:none;white-space:nowrap}
+.nav a:hover{color:#FFFFFF;text-decoration:none}
+.nav a[aria-current="page"]{background:#FFFFFF;color:#1B1F3F}
+.hdr-right{grid-column:3;justify-self:end;display:flex;align-items:center;gap:10px;animation:settle 620ms var(--ease-quint) 140ms both}
+.burger{display:none;place-items:center;width:48px;height:48px;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.34);background:rgba(255,255,255,.10);color:#FFFFFF}
+.burger .i-close{display:none}
+.burger.is-open .i-open{display:none}
+.burger.is-open .i-close{display:block}
+.menu-panel{position:fixed;inset:0 0 auto 0;z-index:35;background:var(--night);padding:104px var(--pad) 32px;display:flex;flex-direction:column;gap:4px;transform:translateY(-100%);visibility:hidden;transition:transform 420ms var(--ease-quint),visibility 0s linear 420ms;box-shadow:0 24px 48px rgba(0,0,0,.35)}
+.menu-panel.open{transform:none;visibility:visible;transition:transform 420ms var(--ease-quint)}
+.menu-panel a.m-link{font:600 30px/1.1 var(--font-display);letter-spacing:-.025em;color:#FFFFFF;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12);text-decoration:none}
+.menu-panel .m-foot{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;color:rgba(255,255,255,.72);font-size:14px}
+.menu-panel .m-foot a:not(.btn){color:#FFFFFF}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;height:100vh;height:100svh;min-height:600px;max-height:1120px;overflow:hidden;background:var(--night);color:#FFFFFF;display:grid;grid-template-columns:minmax(0,calc(var(--shell) - 2 * var(--pad)));grid-template-rows:auto auto 1fr;justify-content:center;gap:clamp(12px,2svh,20px);padding:clamp(104px,12svh,140px) var(--pad) 34px}
+.hero-title{grid-row:1;position:relative;z-index:3;pointer-events:none;max-width:min(64%,13ch);font:700 clamp(44px,8.6vw,170px)/.9 var(--font-display);font-size:clamp(44px,min(8.6vw,10.5svh),170px);letter-spacing:-.035em;color:#FFFFFF;text-wrap:balance}
+.hl{display:block;overflow:hidden}
+@supports (overflow:clip){ .hl{overflow:visible;overflow-y:clip} }
+.hl > span{display:block}
+.hl-1{padding-bottom:.02em}
+.hl-1 > span{animation:reveal 900ms var(--ease-expo) 180ms both}
+.hl-2{padding-bottom:.16em;margin-bottom:-.14em}
+.hl-2 > span{animation:reveal 900ms var(--ease-expo) 260ms both}
+.hero-title em{font-style:normal;color:var(--accent)}
+.hero-copy{grid-row:2;position:relative;z-index:3;pointer-events:none}
+.hero-lead{max-width:30ch;font:400 clamp(16px,1.25vw,19px)/1.5 var(--font-body);color:rgba(255,255,255,.80);animation:rise 700ms var(--ease-quint) 460ms both}
+.hero-cta{margin-top:18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;animation:rise 700ms var(--ease-quint) 540ms both}
+.hero-cta .btn,.hero-cta a{pointer-events:auto}
+.hero-phone{font:500 14px/1.3 var(--font-body);color:rgba(255,255,255,.78)}
+.hero-phone a{color:#FFFFFF}
+
+.eye{position:absolute;inset:0;z-index:0;--ex:65%;--ey:60%;--ew:600px;--open:0}
+.eye-bg{position:absolute;inset:0;background:radial-gradient(ellipse calc(var(--ew) * 1.15) calc(var(--ew) * .85) at var(--ex) var(--ey),var(--night-3) 0%,var(--night-2) 44%,var(--night) 100%)}
+.eye-glow{position:absolute;left:var(--ex);top:var(--ey);width:calc(var(--ew) * 1.5);height:calc(var(--ew) * .9);transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(112,136,244,.40),rgba(112,136,244,.12) 55%,rgba(112,136,244,0));opacity:calc(.22 + .78 * var(--open));pointer-events:none}
+.eye-canvas{position:absolute;left:0;top:0;pointer-events:none;animation:fade 900ms ease 300ms both}
+.eye-hit{position:absolute;z-index:2;left:calc(var(--ex) - var(--ew) * .5);top:calc(var(--ey) - var(--ew) * .3);width:var(--ew);height:calc(var(--ew) * .52);padding:0;border:0;border-radius:50%;background:transparent;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.eye-hit:focus-visible{outline:2px solid var(--accent);outline-offset:8px}
+.eye-cap{position:absolute;z-index:2;left:var(--ex);top:calc(var(--ey) + var(--ew) * .235 + 12px);transform:translateX(-50%);white-space:nowrap;pointer-events:none;font:400 12px/1.4 var(--font-body);color:rgba(255,255,255,.66);animation:fade 600ms ease 900ms both;transition:opacity var(--dur-fast) ease}
+.eye-cap::before{content:"";display:inline-block;width:6px;height:6px;margin:0 8px 1px 0;border-radius:50%;background:var(--accent);vertical-align:middle}
+
+.hero-stats{grid-row:3;align-self:end;position:relative;z-index:3;pointer-events:none;display:flex;justify-content:space-between;align-items:flex-end;gap:18px;animation:rise 760ms var(--ease-quint) 780ms both}
+.stat{max-width:min(46%,360px);display:flex;align-items:center;gap:14px;padding:20px 26px;border-radius:var(--r-pill);background:rgba(255,255,255,.10);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.stat-num{flex:none;display:grid;font:700 var(--fs-stat)/1 var(--font-display);letter-spacing:-.03em;color:#FFFFFF;font-variant-numeric:tabular-nums}
+.stat-num > span{grid-area:1/1}
+.stat-ghost{visibility:hidden}
+.stat-cap{max-width:230px;font:400 13px/1.35 var(--font-body);color:rgba(255,255,255,.76)}
+
+/* ---------- Secciones claras ---------- */
+.sec{max-width:var(--shell);margin-inline:auto;padding:clamp(72px,9vw,140px) var(--pad)}
+.sec + .sec{padding-top:0}
+.sec-title{font:600 var(--fs-section)/.96 var(--font-display);letter-spacing:-.03em;color:var(--ink);overflow:hidden;text-wrap:balance}
+.sec-title > span{display:block;padding-bottom:.08em;margin-bottom:-.08em;transition:transform 900ms var(--ease-expo)}
+.sec-title.pre > span{transform:translateY(115%)}
+.sec-title .dot{color:var(--accent)}
+.lead{margin-top:16px;max-width:54ch;font:400 var(--fs-lead)/1.6 var(--font-body);color:var(--muted)}
+[data-stagger] > *{transition:opacity 620ms var(--ease-quint),transform 620ms var(--ease-quint);transition-delay:calc(var(--i,0) * 80ms)}
+[data-stagger].pre > *{opacity:0;transform:translateY(20px)}
+
+/* La consulta */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--gap);margin-top:clamp(28px,3vw,48px)}
+.about-col{display:grid;gap:var(--gap);align-content:start;min-width:0}
+.mission{background:var(--surface);border-radius:var(--r-card);padding:32px}
+.statement{margin-top:22px;font:600 var(--fs-statement)/1.12 var(--font-display);letter-spacing:-.025em;color:var(--muted);text-wrap:pretty}
+.cite{margin-top:26px;font:400 13px/1.45 var(--font-body);color:var(--muted)}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--gap)}
+.link-card{background:var(--surface);border-radius:var(--r-card);padding:30px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:var(--ink);text-decoration:none;transition:background-color var(--dur-fast) ease}
+.link-card:hover{background:var(--surface-2);color:var(--ink);text-decoration:none}
+.link-card svg{transition:transform var(--dur-fast) var(--ease-quint)}
+.link-card:hover svg{transform:translate(3px,-3px)}
+.link-card h3{font:600 clamp(21px,1.9vw,28px)/1.12 var(--font-display);letter-spacing:-.02em;text-wrap:balance}
+.link-card p{margin-top:8px;font-size:13px;line-height:1.45;color:var(--muted)}
+.chart-fig{position:relative;border-radius:var(--r-card);overflow:hidden;background:var(--field);min-height:460px;box-shadow:inset 0 0 0 1px var(--hairline)}
+.chart-fig .micro{position:absolute;top:26px;left:28px}
+.chart-fig .micro-r{left:auto;right:28px}
+.chart{position:absolute;left:24px;top:58px;width:calc(100% - 48px);height:calc(100% - 124px);transform-origin:50% 50%;will-change:filter,transform}
+.chart-chip{position:absolute;left:24px;bottom:22px;padding:8px 13px;border-radius:var(--r-pill);background:var(--surface);font:500 var(--fs-micro)/1 var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);transition:opacity 400ms ease}
+.chart-chip.done{opacity:0}
+
+/* La doctora */
+.doc-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:var(--gap);margin-top:clamp(28px,3vw,48px)}
+.doc-card{position:relative;overflow:hidden;isolation:isolate;border-radius:var(--r-card);background:var(--brand);color:#FFFFFF;padding:clamp(26px,3vw,40px);min-height:480px;display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.doc-card .micro{color:rgba(255,255,255,.72)}
+.doc-card-e{position:absolute;top:clamp(26px,3vw,40px);right:clamp(26px,3vw,40px);width:clamp(56px,7vw,96px);height:auto;fill:#FFFFFF;opacity:.16;z-index:-1}
+.nowrap{white-space:nowrap}
+.doc-since{display:grid;gap:8px}
+.doc-since span{font:500 13px/1 var(--font-body);color:rgba(255,255,255,.72)}
+.doc-since strong{font:700 clamp(84px,10vw,160px)/.84 var(--font-display);letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.doc-card h3{font:600 clamp(26px,2.5vw,36px)/1.06 var(--font-display);letter-spacing:-.025em;text-wrap:balance}
+.doc-cred{margin-top:10px;max-width:40ch;font:400 14px/1.5 var(--font-body);color:rgba(255,255,255,.8)}
+.doc-body{min-width:0;background:var(--surface);border-radius:var(--r-card);padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:18px}
+.doc-lead{font:600 clamp(24px,2.3vw,34px)/1.14 var(--font-display);letter-spacing:-.025em;color:var(--ink);text-wrap:pretty;max-width:24ch}
+.doc-text{max-width:60ch;font:400 var(--fs-lead)/1.65 var(--font-body);color:var(--muted)}
+.doc-facts{margin:auto 0 0;padding-top:8px}
+.doc-facts > div{display:grid;grid-template-columns:minmax(96px,.3fr) minmax(0,1fr);gap:6px 16px;padding:13px 0;border-top:1px solid var(--hairline)}
+.doc-facts dt{padding-top:3px;font:500 var(--fs-micro)/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.doc-facts dd{margin:0;font:400 15px/1.45 var(--font-body);color:var(--ink)}
+
+/* Opiniones */
+.stars{display:inline-block;flex:none;width:84px;height:16px;background:linear-gradient(90deg,var(--star) calc(var(--r,1) * 100%),var(--star-off) 0);-webkit-mask:var(--stars-mask) 0 0/100% 100% no-repeat;mask:var(--stars-mask) 0 0/100% 100% no-repeat}
+.rev-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px 32px;flex-wrap:wrap;margin-top:clamp(56px,7vw,104px);scroll-margin-top:24px}
+.rev-head h3{margin-top:14px;font:600 clamp(30px,3.4vw,50px)/1 var(--font-display);letter-spacing:-.03em;color:var(--ink);text-wrap:balance}
+.rev-scores{display:flex;flex-wrap:wrap;gap:12px}
+.score{display:flex;align-items:center;gap:14px;padding:12px 22px 12px 18px;border-radius:var(--r-pill);background:var(--surface);color:var(--ink);text-decoration:none;transition:background-color var(--dur-fast) ease}
+.score:hover{background:var(--surface-2);color:var(--ink);text-decoration:none}
+.score-num{font:700 32px/1 var(--font-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.score-meta{display:grid;gap:6px;justify-items:start}
+.score-src{font:500 12.5px/1 var(--font-body);color:var(--muted);white-space:nowrap}
+.rev-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);margin-top:clamp(24px,2.6vw,36px)}
+.rev{min-width:0;background:var(--surface);border-radius:var(--r-card);padding:28px;display:flex;flex-direction:column;gap:18px}
+.rev blockquote{font:500 clamp(17px,1.3vw,19px)/1.45 var(--font-display);letter-spacing:-.012em;color:var(--ink);text-wrap:pretty}
+.rev blockquote::before{content:"«"}
+.rev blockquote::after{content:"»"}
+.rev-feat{grid-column:span 2;background:var(--field);box-shadow:inset 0 0 0 1px var(--hairline)}
+.rev-feat blockquote{font-size:clamp(23px,2.4vw,36px);line-height:1.18;letter-spacing:-.025em;font-weight:600;max-width:30ch}
+.rev footer{margin-top:auto;padding-top:16px;border-top:1px solid var(--hairline);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.rev-name{font:600 14px/1.3 var(--font-body);color:var(--ink)}
+.rev-src{flex:none;padding:6px 10px;border-radius:var(--r-pill);background:var(--paper);font:500 var(--fs-micro)/1 var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.rev-feat .rev-src{background:var(--surface)}
+.rev-note{margin-top:18px;max-width:70ch;font:400 12.5px/1.5 var(--font-body);color:var(--muted)}
+
+/* Tratamientos */
+.feat-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--gap);margin-top:clamp(28px,3vw,48px)}
+.feat{background:var(--surface);border-radius:var(--r-card);padding:32px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.feat-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.feat h3{font:600 clamp(26px,2.6vw,38px)/1.06 var(--font-display);letter-spacing:-.025em}
+.feat-e{width:30px;height:30px;fill:var(--mark);flex:none;opacity:.9}
+.feat ul{display:grid;gap:12px}
+.feat li{display:flex;justify-content:space-between;gap:16px;padding-top:12px;border-top:1px solid var(--hairline);font:400 var(--fs-lead)/1.4 var(--font-body);color:var(--ink)}
+.feat li span{color:var(--muted);font-size:13px;text-align:right}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);margin-top:var(--gap)}
+.tile{background:var(--surface);border-radius:var(--r-tile);min-height:104px;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 16px;text-align:center;font:500 clamp(17px,1.5vw,22px)/1.1 var(--font-display);letter-spacing:-.02em;color:var(--muted);text-decoration:none;transition:background-color var(--dur-fast) ease,color var(--dur-fast) ease}
+.tile:hover{color:var(--ink);background:var(--surface-2);text-decoration:none}
+.tile .t-arr{font-size:.8em;opacity:0;transform:translateX(-4px);transition:opacity var(--dur-fast) ease,transform var(--dur-fast) var(--ease-quint)}
+.tile:hover .t-arr{opacity:1;transform:none}
+
+/* Tu visita */
+.team-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.team-head > div:first-child{min-width:0}
+.rail-btns{display:flex;gap:10px}
+.rail-btns[hidden]{display:none!important}
+.circle-btn{width:44px;height:44px;padding:0;border-radius:50%;border:1px solid var(--hairline);background:transparent;color:var(--ink);display:grid;place-items:center;transition:background-color var(--dur-fast) ease,opacity var(--dur-fast) ease}
+.circle-btn:hover{background:var(--surface)}
+.circle-btn:disabled{opacity:.35;cursor:default}
+.rail{margin-top:clamp(28px,3vw,48px);display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3 * var(--gap)) / 4);gap:var(--gap);overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.rail::-webkit-scrollbar{display:none}
+.step{scroll-snap-align:start;background:var(--surface);border-radius:var(--r-card);padding:18px;display:flex;flex-direction:column;min-width:0}
+.step-panel{position:relative;aspect-ratio:4/3;max-width:100%;border-radius:var(--r-media);background:var(--brand);display:grid;place-items:center;overflow:hidden}
+.step-panel svg{width:34%;height:auto;fill:#FFFFFF}
+.step-panel .micro{position:absolute;top:16px;left:18px;color:rgba(255,255,255,.72)}
+.step-panel .step-dots{position:absolute;right:16px;top:14px;display:flex;gap:5px}
+.step-panel .step-dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.28)}
+.step-panel .step-dots i.on{background:#FFFFFF}
+.step h3{margin-top:18px;font:600 21px/1.2 var(--font-display);letter-spacing:-.02em}
+.step p{margin-top:8px;font:400 14px/1.5 var(--font-body);color:var(--muted)}
+
+/* Cita */
+.book{background:var(--surface);border-radius:var(--r-card);padding:clamp(26px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,4vw,64px)}
+.book > *{min-width:0}
+.book-form{display:grid;gap:14px;margin-top:clamp(24px,3vw,36px)}
+.field{width:100%;height:58px;padding:0 22px;border:0;border-radius:var(--r-pill);background:var(--field);font:400 15px/1 var(--font-body);letter-spacing:-.01em;color:var(--ink);box-shadow:inset 0 0 0 1px var(--hairline);transition:box-shadow var(--dur-fast) ease}
+.field::placeholder{color:var(--muted);opacity:1}
+.field:focus{outline:none;box-shadow:inset 0 0 0 2px var(--accent)}
+.field[aria-invalid="true"]{box-shadow:inset 0 0 0 2px #C4473E}
+.select{position:relative;display:block}
+.select select{-webkit-appearance:none;appearance:none;padding-right:46px;cursor:pointer}
+.select select:invalid{color:var(--muted)}
+.select::after{content:"";position:absolute;right:24px;top:50%;width:8px;height:8px;margin-top:-6px;border-right:1.6px solid var(--muted);border-bottom:1.6px solid var(--muted);transform:rotate(45deg);pointer-events:none}
+.field-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.book-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:4px}
+.btn-wa svg{transition:transform var(--dur-fast) var(--ease-quint)}
+.btn-wa:hover svg{transform:rotate(-8deg) scale(1.06)}
+.book-note{font:400 13px/1.55 var(--font-body);color:var(--muted);max-width:52ch}
+.book-note.ok{color:var(--ink)}
+.book-note.err{color:#C4473E}
+.where{display:grid;grid-template-rows:auto 1fr auto;gap:18px}
+.where h3{margin-top:12px;font:600 clamp(24px,2.4vw,34px)/1.08 var(--font-display);letter-spacing:-.025em}
+.map{position:relative;overflow:hidden;border-radius:var(--r-media);background:var(--surface-2);min-height:300px}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .m-lbl{font:500 9px var(--font-mono);letter-spacing:.14em;fill:var(--muted)}
+.map .ring{transform-box:fill-box;transform-origin:center;animation:pulsering 2200ms var(--ease-quint) infinite}
+.where-cap{display:flex;align-items:flex-start;justify-content:space-between;gap:10px 16px;flex-wrap:wrap;font:400 14px/1.45 var(--font-body);color:var(--ink)}
+.where-cap strong{font-weight:600}
+.hours{display:grid;gap:2px;font:400 13px/1.5 var(--font-mono);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+
+/* Banda */
+.marquee-wrap{max-width:var(--shell);margin-inline:auto;padding:0 var(--pad) clamp(72px,9vw,140px)}
+.marquee{overflow:hidden;background:var(--band);border-radius:var(--r-pill);height:76px;-webkit-mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marquee 30s linear infinite}
+.marquee-track > span{display:flex;align-items:center;font:600 clamp(20px,2.2vw,30px)/76px var(--font-display);letter-spacing:-.02em;color:var(--band-fg);white-space:nowrap}
+.marquee-track svg{width:.62em;height:.62em;fill:var(--accent);margin-inline:26px;flex:none}
+
+/* Pie */
+.footer{overflow:hidden;padding-top:clamp(48px,6vw,88px);padding-bottom:clamp(20px,2.4vw,36px);border-top:1px solid var(--hairline)}
+.foot-shell{max-width:var(--shell);margin-inline:auto;padding-inline:var(--pad)}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.3fr);gap:var(--gap) 48px}
+.foot-brand{display:inline-flex;align-items:center;gap:12px;color:var(--mark);text-decoration:none}
+.foot-brand:hover{text-decoration:none;color:var(--mark)}
+.foot-brand .brand-mark{width:40px}
+.foot-brand .brand-name{font-size:19px;color:var(--ink)}
+.foot-brand .brand-desc{color:var(--muted);opacity:1}
+.foot-about p{margin-top:20px;max-width:38ch;font:400 15px/1.55 var(--font-body);color:var(--ink)}
+.foot-contact{display:grid;gap:2px;justify-items:start}
+.foot-contact a{font:500 15px/1.5 var(--font-body);color:var(--ink)}
+.foot-contact span{font-size:14px;color:var(--muted)}
+.foot-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap)}
+.foot-cols > div{min-width:0}
+.foot-cols ul{margin-top:14px;display:grid;gap:5px}
+.foot-cols li{font:400 13px/1.5 var(--font-body);color:var(--ink)}
+.foot-cols a{color:var(--ink)}
+.foot-legal{max-width:var(--shell);margin:0 auto;padding:clamp(32px,4vw,56px) var(--pad) 0;font:400 12px/1.5 var(--font-body);color:var(--muted)}
+.wordmark{display:block;margin-top:clamp(14px,2vw,28px);font-family:var(--font-display);font-weight:700;font-size:min(calc((100vw - 2 * var(--pad)) / 7.2), 190px);line-height:1.02;letter-spacing:-.045em;color:var(--ink-max);white-space:nowrap}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1279px){ .rail{grid-auto-columns:calc((100% - 2 * var(--gap)) / 3)} }
+@media (max-width:1023px){
+  .nav{display:none}
+  .burger{display:grid}
+  .hdr{grid-template-columns:1fr auto}
+  .hdr-right{grid-column:2}
+  .about-grid,.feat-grid,.book,.doc-grid{grid-template-columns:minmax(0,1fr)}
+  .rev-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .doc-card{min-height:420px}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chart-fig{min-height:520px}
+}
+@media (max-width:899px){
+  .rail{grid-auto-columns:calc((100% - var(--gap)) / 1.6)}
+  .foot-top{grid-template-columns:minmax(0,1fr)}
+  .foot-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero{padding-top:112px}
+  .hero-title{max-width:min(100%,13ch)}
+}
+@media (max-width:599px){
+  .hdr-cta{display:none}
+  .brand-name{font-size:14.5px}
+  .brand-mark{width:28px}
+  .hero{min-height:660px;padding:104px var(--pad) 20px;gap:16px}
+  .hero-phone{display:none}
+  .hero-stats{gap:10px;align-items:stretch}
+  .stat{flex:1 1 0;max-width:none;padding:14px 16px;border-radius:22px;gap:10px;flex-direction:column;align-items:flex-start}
+  .stat-num{font-size:32px}
+  .stat-cap{font-size:11.5px}
+  .duo{grid-template-columns:minmax(0,1fr)}
+  .rev-grid{grid-template-columns:minmax(0,1fr);gap:14px}
+  .rev-feat{grid-column:auto}
+  .rev{padding:24px}
+  .doc-card{min-height:380px}
+  .doc-facts > div{grid-template-columns:minmax(0,1fr);gap:4px}
+  .score{flex:1 1 100%}
+  .link-card{min-height:0}
+  .mission{padding:26px}
+  .feat{padding:26px;min-height:0}
+  .tiles{gap:12px}
+  .tile{min-height:84px;font-size:17px}
+  .rail{grid-auto-columns:calc(100% - 44px)}
+  .field-row{grid-template-columns:minmax(0,1fr)}
+  .book-actions .btn{width:100%;height:auto;min-height:52px;padding:14px 20px;white-space:normal;text-align:center;line-height:1.25}
+  .chart-fig{min-height:480px}
+  .chart{left:12px;width:calc(100% - 24px)}
+  .feat li{flex-direction:column;gap:2px}
+  .feat li span{text-align:left}
+  .hours{text-align:left}
+}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="0 0 100 104.667"><path d="M0 35.2h44v8.8h-44zM0 0h8.8v44h-8.8zM17.6 0h8.8v44h-8.8zM35.2 0h8.8v44h-8.8zM56 0h8.8v44h-8.8zM56 0h44v8.8h-44zM56 17.6h44v8.8h-44zM56 35.2h44v8.8h-44zM21.33 54h5.33v26.67h-5.33zM0 54h26.67v5.33h-26.67zM0 64.67h26.67v5.33h-26.67zM0 75.33h26.67v5.33h-26.67zM36.67 54h26.67v5.33h-26.67zM36.67 54h5.33v26.67h-5.33zM47.33 54h5.33v26.67h-5.33zM58 54h5.33v26.67h-5.33zM73.33 75.33h26.67v5.33h-26.67zM73.33 54h5.33v26.67h-5.33zM84 54h5.33v26.67h-5.33zM94.67 54h5.33v26.67h-5.33zM0 88.67h16v3.2h-16zM0 88.67h3.2v16h-3.2zM6.4 88.67h3.2v16h-3.2zM12.8 88.67h3.2v16h-3.2zM21 88.67h3.2v16h-3.2zM21 88.67h16v3.2h-16zM21 95.07h16v3.2h-16zM21 101.47h16v3.2h-16zM54.8 88.67h3.2v16h-3.2zM42 88.67h16v3.2h-16zM42 95.07h16v3.2h-16zM42 101.47h16v3.2h-16zM63 101.47h16v3.2h-16zM63 88.67h3.2v16h-3.2zM69.4 88.67h3.2v16h-3.2zM75.8 88.67h3.2v16h-3.2zM84 88.67h3.2v16h-3.2zM84 88.67h16v3.2h-16zM84 95.07h16v3.2h-16zM84 101.47h16v3.2h-16z"/></symbol>
+  <symbol id="oE" viewBox="0 0 5 5"><path d="M0 0h5v1H1v1h4v1H1v1h4v1H0z"/></symbol>
+  <symbol id="o3" viewBox="0 0 5 5"><path d="M5 0H0v1h4v1H0v1h4v1H0v1h5z"/></symbol>
+  <symbol id="oM" viewBox="0 0 5 5"><path d="M0 0h5v5H4V1H3v4H2V1H1v4H0z"/></symbol>
+  <symbol id="oW" viewBox="0 0 5 5"><path d="M0 0h1v4h1V0h1v4h1V0h1v5H0z"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="hdr">
+    <a class="brand" href="#inicio" aria-label="Dra. Leticia López-Areal, clínica oftalmológica. Ir al inicio">
+      <svg class="brand-mark" viewBox="0 0 100 104.667" aria-hidden="true"><use href="#mark"/></svg>
+      <span class="brand-text"><span class="brand-name">Dra. Leticia López-Areal</span><span class="brand-desc">Clínica oftalmológica</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio" aria-current="page">Inicio</a>
+      <a href="#consulta">La consulta</a>
+      <a href="#doctora">La doctora</a>
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#cita">Contacto</a>
+    </nav>
+    <div class="hdr-right">
+      <a class="btn btn-light hdr-cta" href="#cita">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+        Pedir cita
+      </a>
+      <button id="burger" class="burger" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Abrir menú">
+        <svg class="i-open" width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1 1h16M1 7h16M1 13h16"/></svg>
+        <svg class="i-close" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 2l12 12M14 2 2 14"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="menu-panel" class="menu-panel" inert>
+  <a class="m-link" href="#inicio">Inicio</a>
+  <a class="m-link" href="#consulta">La consulta</a>
+  <a class="m-link" href="#doctora">La doctora</a>
+  <a class="m-link" href="#tratamientos">Tratamientos</a>
+  <a class="m-link" href="#visita">Tu visita</a>
+  <a class="m-link" href="#cita">Contacto</a>
+  <div class="m-foot">
+    <a class="btn btn-light" href="#cita">Pedir cita <span class="arr" aria-hidden="true">→</span></a>
+    <span>o llama al <a href="tel:+34944425098">944 42 50 98</a></span>
+  </div>
+</div>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section id="inicio" class="hero" aria-labelledby="hero-title">
+    <div class="eye" id="eye">
+      <div class="eye-bg" aria-hidden="true"></div>
+      <div class="eye-glow" aria-hidden="true"></div>
+      <canvas id="eye-canvas" class="eye-canvas" aria-hidden="true"></canvas>
+      <button id="eye-hit" class="eye-hit" type="button" aria-pressed="false" aria-label="Ojo interactivo: pulsa para abrirlo o cerrarlo"></button>
+      <p class="eye-cap" id="eye-cap" aria-hidden="true">Pasa el cursor por el ojo</p>
+    </div>
+
+    <h1 id="hero-title" class="hero-title">
+      <span class="hl hl-1"><span>Ver de cerca,</span></span>
+      <span class="hl hl-2"><span>ver de <em>lejos</em></span></span>
+    </h1>
+
+    <div class="hero-copy">
+      <p class="hero-lead" id="hero-lead">Consulta de oftalmología en la Gran Vía de Bilbao desde 1982. Revisiones, cataratas y cirugía refractiva, explicadas con calma.</p>
+      <div class="hero-cta" id="hero-cta">
+        <a class="btn btn-light" href="#cita">Pedir cita <span class="arr" aria-hidden="true">→</span></a>
+        <span class="hero-phone">o llama al <a href="tel:+34944425098">944 42 50 98</a></span>
+      </div>
+    </div>
+
+    <div class="hero-stats" id="hero-stats">
+      <div class="stat">
+        <span class="stat-num"><span class="stat-ghost" aria-hidden="true">44</span><span class="stat-live" id="stat-years" data-count="44">44</span></span>
+        <span class="stat-cap">Años cuidando la vista en Bilbao, desde 1982</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num"><span class="stat-ghost" aria-hidden="true">4,7</span><span class="stat-live" data-count="4.7" data-dec="1">4,7</span></span>
+        <span class="stat-cap">Valoración media en Google · 5,0 en Doctoralia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LA CONSULTA ================= -->
+  <section id="consulta" class="sec" aria-labelledby="about-title">
+    <h2 id="about-title" class="sec-title" data-reveal><span>La consulta</span></h2>
+    <div class="about-grid">
+      <div class="about-col">
+        <div class="mission">
+          <p class="micro">Cómo trabajamos</p>
+          <blockquote class="statement" id="statement"><span class="w">Mirar</span> <span class="w">con</span> <span class="w">calma,</span> <span class="w">explicarlo</span> <span class="w">con</span> <span class="w">claridad</span> <span class="w">y</span> <span class="w">acompañarte</span> <span class="w">en</span> <span class="w">cada</span> <span class="w">revisión.</span></blockquote>
+          <p class="cite">Dra. Leticia López-Areal · Gran Vía 56, Bilbao</p>
+        </div>
+        <div class="duo" data-stagger>
+          <a class="link-card" href="#doctora">
+            <svg width="30" height="30" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 25 25 9M12 9h13v13"/></svg>
+            <div><h3>Conoce a la doctora</h3><p>Especialista por la UPV/EHU, en Bilbao desde 1982.</p></div>
+          </a>
+          <a class="link-card" href="#tratamientos">
+            <svg width="30" height="30" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 25 25 9M12 9h13v13"/></svg>
+            <div><h3>Cataratas y cirugía refractiva</h3><p>Diagnóstico, cirugía y seguimiento en la misma consulta.</p></div>
+          </a>
+        </div>
+      </div>
+      <figure class="chart-fig" id="chart-fig">
+        <p class="micro">Agudeza visual</p>
+        <p class="micro micro-r">Escala decimal</p>
+        <svg id="chart" class="chart" role="img" aria-label="Tabla de optotipos de E, de 0,1 a 1,0 de agudeza visual, con test bicromático rojo y verde"></svg>
+        <span class="chart-chip" id="chart-chip" aria-hidden="true">Desplázate para enfocar</span>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= LA DOCTORA ================= -->
+  <section id="doctora" class="sec" aria-labelledby="doc-title">
+    <h2 id="doc-title" class="sec-title" data-reveal><span>La doctora</span></h2>
+    <div class="doc-grid" data-stagger>
+      <article class="doc-card">
+        <svg class="doc-card-e" viewBox="0 0 5 5" aria-hidden="true"><use href="#oE"/></svg>
+        <p class="micro">Oftalmóloga en Bilbao</p>
+        <div class="doc-since"><span>Pasando consulta desde</span><strong>1982</strong></div>
+        <div>
+          <h3>Dra. Leticia <span class="nowrap">López-Areal</span> García</h3>
+          <p class="doc-cred">Licenciada en Medicina y especialista en Oftalmología por la Universidad del País Vasco (UPV/EHU).</p>
+        </div>
+      </article>
+      <div class="doc-body">
+        <p class="doc-lead">Hay pacientes que llevan más de treinta años viniendo a su consulta, algunos con toda su familia.</p>
+        <p class="doc-text">Abrió su consulta en Bilbao en 1982 y desde entonces se dedica a la oftalmología general y a la cirugía ocular. Trata los defectos de la vista, el glaucoma y el ojo seco, y opera cataratas, córnea y párpados.</p>
+        <p class="doc-text">Sus pacientes destacan lo mismo una y otra vez: que explica el problema de forma clara, que dedica a cada revisión el tiempo que hace falta y que el trato es cercano.</p>
+        <dl class="doc-facts">
+          <div><dt>Formación</dt><dd>Licenciada en Medicina · Especialista en Oftalmología (UPV/EHU)</dd></div>
+          <div><dt>Consulta</dt><dd>Gran Vía, 56 · Bilbao, desde 1982</dd></div>
+          <div><dt>Cirugía</dt><dd>Cataratas · Refractiva de córnea · Párpados y estética periocular</dd></div>
+          <div><dt>Registro</dt><dd>Centro sanitario RPS 11/00</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="rev-head" id="opiniones">
+      <div>
+        <p class="micro">Opiniones de pacientes</p>
+        <h3>Lo que dicen de ella</h3>
+      </div>
+      <div class="rev-scores">
+        <a class="score" href="https://www.google.com/maps?cid=2787469399290076291" target="_blank" rel="noopener">
+          <span class="score-num">4,7</span>
+          <span class="score-meta"><span class="stars" style="--r:.94" role="img" aria-label="4,7 de 5 estrellas"></span><span class="score-src">Google · 9 opiniones ↗</span></span>
+        </a>
+        <a class="score" href="https://www.doctoralia.es/leticia-lopez-areal-garcia/oftalmologo/bilbao" target="_blank" rel="noopener">
+          <span class="score-num">5,0</span>
+          <span class="score-meta"><span class="stars" style="--r:1" role="img" aria-label="5 de 5 estrellas"></span><span class="score-src">Doctoralia · 5 opiniones ↗</span></span>
+        </a>
+      </div>
+    </div>
+    <div class="rev-grid" data-stagger>
+      <article class="rev rev-feat">
+        <span class="stars" style="--r:1" role="img" aria-label="5 de 5 estrellas"></span>
+        <blockquote>Excelente profesional. Llevo más de 30 años acudiendo a su consulta y además de su capacidad médica, el trato humano siempre impecable.</blockquote>
+        <footer><span class="rev-name">Javier L.</span><span class="rev-src">Google</span></footer>
+      </article>
+      <article class="rev">
+        <span class="stars" style="--r:1" role="img" aria-label="5 de 5 estrellas"></span>
+        <blockquote>Me he operado recientemente con ella y estoy encantada de lo genial que me ha dejado tanto la visión de lejos como la de cerca.</blockquote>
+        <footer><span class="rev-name">Paciente anónima</span><span class="rev-src">Doctoralia</span></footer>
+      </article>
+      <article class="rev">
+        <span class="stars" style="--r:1" role="img" aria-label="5 de 5 estrellas"></span>
+        <blockquote>Que decir, he estado 33 años junto a gran parte de mi familia. […] Muy profesional!! Recomendable 💯 x 💯</blockquote>
+        <footer><span class="rev-name">Eduardo A.</span><span class="rev-src">Google</span></footer>
+      </article>
+      <article class="rev">
+        <span class="stars" style="--r:1" role="img" aria-label="5 de 5 estrellas"></span>
+        <blockquote>Excelente tanto en lo profesional como en el trato humano.</blockquote>
+        <footer><span class="rev-name">Jlb</span><span class="rev-src">Doctoralia</span></footer>
+      </article>
+      <article class="rev">
+        <span class="stars" style="--r:1" role="img" aria-label="5 de 5 estrellas"></span>
+        <blockquote>Muy buena oftalmóloga y muy amable, también tiene una enfermera muy atenta y profesional igual que ella, la aconsejo un 100% a las dos.</blockquote>
+        <footer><span class="rev-name">Francisco D.</span><span class="rev-src">Google</span></footer>
+      </article>
+    </div>
+    <p class="rev-note">Opiniones publicadas por pacientes en Google y Doctoralia. Algunas aparecen resumidas; el texto completo está en cada plataforma.</p>
+  </section>
+
+  <!-- ================= TRATAMIENTOS ================= -->
+  <section id="tratamientos" class="sec" aria-labelledby="treat-title">
+    <h2 id="treat-title" class="sec-title" data-reveal><span>Tratamientos</span></h2>
+    <p class="lead">Desde la revisión anual hasta la cirugía. Cada tratamiento empieza con una exploración completa y un plan que decides con nosotros.</p>
+    <div class="feat-grid" data-stagger>
+      <article class="feat">
+        <div class="feat-head"><h3>Cirugía ocular</h3><svg class="feat-e" viewBox="0 0 5 5" aria-hidden="true"><use href="#oE"/></svg></div>
+        <ul>
+          <li>Cataratas <span>Lente intraocular</span></li>
+          <li>Cirugía refractiva corneal <span>Miopía, hipermetropía, astigmatismo</span></li>
+          <li>Cirugía de párpados <span>Funcional y estética</span></li>
+        </ul>
+      </article>
+      <article class="feat">
+        <div class="feat-head"><h3>Diagnóstico y control</h3><svg class="feat-e" viewBox="0 0 5 5" aria-hidden="true"><use href="#oM"/></svg></div>
+        <ul>
+          <li>Revisión y graduación <span>Adultos</span></li>
+          <li>Glaucoma <span>Diagnóstico y seguimiento</span></li>
+          <li>Ojo seco <span>Tratamiento y control</span></li>
+        </ul>
+      </article>
+    </div>
+    <div class="tiles" data-stagger>
+      <a class="tile" href="#cita" data-motivo="refractiva">Miopía <span class="t-arr" aria-hidden="true">→</span></a>
+      <a class="tile" href="#cita" data-motivo="refractiva">Hipermetropía <span class="t-arr" aria-hidden="true">→</span></a>
+      <a class="tile" href="#cita" data-motivo="refractiva">Astigmatismo <span class="t-arr" aria-hidden="true">→</span></a>
+      <a class="tile" href="#cita" data-motivo="lentes">Lentes de contacto <span class="t-arr" aria-hidden="true">→</span></a>
+      <a class="tile" href="#cita" data-motivo="parpados">Estética periocular <span class="t-arr" aria-hidden="true">→</span></a>
+      <a class="tile" href="#cita" data-motivo="revision">Revisión anual <span class="t-arr" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- ================= TU VISITA ================= -->
+  <section id="visita" class="sec" aria-labelledby="visit-title">
+    <div class="team-head">
+      <div>
+        <h2 id="visit-title" class="sec-title" data-reveal><span>Tu visita</span></h2>
+        <p class="lead">Así es una consulta con nosotros, de la primera llamada a las revisiones de seguimiento.</p>
+      </div>
+      <div class="rail-btns" id="rail-btns">
+        <button class="circle-btn" type="button" data-dir="prev" aria-label="Paso anterior" aria-controls="visit-rail">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 1.5 1.8 7 7 12.5"/></svg>
+        </button>
+        <button class="circle-btn" type="button" data-dir="next" aria-label="Paso siguiente" aria-controls="visit-rail">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 1.5 7.2 7 2 12.5"/></svg>
+        </button>
+      </div>
+    </div>
+    <ol id="visit-rail" class="rail" tabindex="0" aria-label="Pasos de tu visita" data-stagger style="padding-left:0;list-style:none">
+      <li class="step">
+        <div class="step-panel"><span class="micro">Paso 1</span><span class="step-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><svg viewBox="0 0 5 5" aria-hidden="true"><use href="#oE"/></svg></div>
+        <h3>Pides cita</h3>
+        <p>Por teléfono o por WhatsApp desde esta página. Te respondemos con día y hora.</p>
+      </li>
+      <li class="step">
+        <div class="step-panel"><span class="micro">Paso 2</span><span class="step-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><svg viewBox="0 0 5 5" aria-hidden="true"><use href="#oM"/></svg></div>
+        <h3>Exploración completa</h3>
+        <p>Medimos tu agudeza visual y tu graduación, la presión del ojo y revisamos el fondo de ojo.</p>
+      </li>
+      <li class="step">
+        <div class="step-panel"><span class="micro">Paso 3</span><span class="step-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><svg viewBox="0 0 5 5" aria-hidden="true"><use href="#o3"/></svg></div>
+        <h3>Te lo explicamos</h3>
+        <p>Diagnóstico claro y opciones de tratamiento, en palabras que se entienden.</p>
+      </li>
+      <li class="step">
+        <div class="step-panel"><span class="micro">Paso 4</span><span class="step-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><svg viewBox="0 0 5 5" aria-hidden="true"><use href="#oW"/></svg></div>
+        <h3>Tratamiento y seguimiento</h3>
+        <p>Si hace falta cirugía, la planificamos contigo y seguimos tu evolución en las revisiones.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ================= CITA ================= -->
+  <section id="cita" class="sec" aria-labelledby="book-title">
+    <div class="book">
+      <div>
+        <h2 id="book-title" class="sec-title" data-reveal><span>Pide cita<span class="dot">.</span></span></h2>
+        <!-- Número de WhatsApp de la clínica: prefijo 34 + número, sin espacios ni "+" -->
+        <form class="book-form" id="cita-form" novalidate data-whatsapp="34666845295">
+          <label class="sr-only" for="f-nombre">Nombre y apellidos</label>
+          <input id="f-nombre" class="field" type="text" name="nombre" autocomplete="name" placeholder="Nombre y apellidos" required>
+          <div class="field-row">
+            <label class="sr-only" for="f-motivo">Motivo de la consulta</label>
+            <span class="select"><select id="f-motivo" class="field" name="motivo" required>
+              <option value="" disabled selected>Motivo de la consulta</option>
+              <option value="revision">Revisión y graduación</option>
+              <option value="cataratas">Cataratas</option>
+              <option value="refractiva">Miopía, hipermetropía o astigmatismo</option>
+              <option value="lentes">Lentes de contacto</option>
+              <option value="parpados">Párpados y estética periocular</option>
+              <option value="glaucoma">Glaucoma</option>
+              <option value="ojo-seco">Ojo seco</option>
+              <option value="otro">Otro motivo</option>
+            </select></span>
+            <label class="sr-only" for="f-franja">Franja preferida</label>
+            <span class="select"><select id="f-franja" class="field" name="franja" required>
+              <option value="" disabled selected>Mejor franja</option>
+              <option value="manana">Mañana</option>
+              <option value="tarde">Tarde (lunes a jueves)</option>
+              <option value="indiferente">Me da igual</option>
+            </select></span>
+          </div>
+          <div class="book-actions">
+            <a class="btn btn-dark btn-wa" id="f-submit" data-wa href="https://wa.me/34666845295" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              Solicitar cita por WhatsApp
+            </a>
+          </div>
+          <p class="book-note" id="form-msg" role="status">Se abrirá WhatsApp con tu mensaje ya escrito; solo tienes que enviarlo y te respondemos con día y hora. ¿Prefieres llamar? <a href="tel:+34944425098">944 42 50 98</a></p>
+        </form>
+      </div>
+      <figure class="where">
+        <div>
+          <p class="micro">Dónde estamos</p>
+          <h3>Gran Vía, 56 · Bilbao</h3>
+        </div>
+        <div class="map" aria-hidden="true">
+          <svg viewBox="0 0 600 380" preserveAspectRatio="xMidYMid slice">
+            <rect width="600" height="380" style="fill:var(--surface-2)"/>
+            <path d="M-30 58 C 90 18, 200 98, 330 62 S 540 24, 640 84" fill="none" style="stroke:var(--map-water)" stroke-width="38" stroke-linecap="round"/>
+            <ellipse cx="128" cy="138" rx="78" ry="44" style="fill:var(--map-park)"/>
+            <g style="stroke:var(--map-road)" stroke-width="3" transform="rotate(-22.6 300 190)">
+              <path d="M-200 60H800M-200 118H800M-200 176H800M-200 234H800M-200 292H800M-200 350H800M-200 408H800"/>
+              <path d="M40 -200V600M110 -200V600M180 -200V600M250 -200V600M320 -200V600M390 -200V600M460 -200V600M530 -200V600M600 -200V600"/>
+            </g>
+            <path d="M-20 328 L 620 62" style="stroke:var(--map-road)" stroke-width="11" stroke-linecap="round"/>
+            <circle cx="340" cy="178" r="27" style="fill:var(--map-road)"/>
+            <circle cx="340" cy="178" r="12" style="fill:var(--map-park)"/>
+            <text class="m-lbl" x="470" y="112" transform="rotate(-22.6 470 112)">GRAN VÍA</text>
+            <text class="m-lbl" x="374" y="218">MOYÚA</text>
+            <text class="m-lbl" x="88" y="142">DOÑA CASILDA</text>
+            <text class="m-lbl" x="236" y="52">RÍA</text>
+            <circle class="ring" cx="262" cy="211" r="15" style="fill:var(--accent)" opacity=".35"/>
+            <circle cx="262" cy="211" r="8" style="fill:var(--accent)"/>
+            <circle cx="262" cy="211" r="3" style="fill:var(--field)"/>
+          </svg>
+        </div>
+        <figcaption class="where-cap">
+          <span><strong>Entreplanta, Dpto. 2</strong><br>Abando, 48011 Bilbao<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Gran%20V%C3%ADa%2056%2C%2048011%20Bilbao" target="_blank" rel="noopener">Cómo llegar ↗</a></span>
+          <span class="hours"><span>L–J 10:00–18:00</span><span>V 10:00–13:00</span></span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= BANDA ================= -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Cataratas<svg viewBox="0 0 5 5"><use href="#oE"/></svg>Cirugía refractiva<svg viewBox="0 0 5 5"><use href="#oM"/></svg>Lentes de contacto<svg viewBox="0 0 5 5"><use href="#o3"/></svg>Glaucoma<svg viewBox="0 0 5 5"><use href="#oW"/></svg>Párpados<svg viewBox="0 0 5 5"><use href="#oE"/></svg>Ojo seco<svg viewBox="0 0 5 5"><use href="#oM"/></svg></span>
+        <span>Cataratas<svg viewBox="0 0 5 5"><use href="#oE"/></svg>Cirugía refractiva<svg viewBox="0 0 5 5"><use href="#oM"/></svg>Lentes de contacto<svg viewBox="0 0 5 5"><use href="#o3"/></svg>Glaucoma<svg viewBox="0 0 5 5"><use href="#oW"/></svg>Párpados<svg viewBox="0 0 5 5"><use href="#oE"/></svg>Ojo seco<svg viewBox="0 0 5 5"><use href="#oM"/></svg></span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ================= PIE ================= -->
+<footer class="footer">
+  <div class="foot-shell">
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="foot-brand" href="#inicio" aria-label="Dra. Leticia López-Areal, clínica oftalmológica. Ir al inicio">
+          <svg class="brand-mark" viewBox="0 0 100 104.667" aria-hidden="true"><use href="#mark"/></svg>
+          <span class="brand-text"><span class="brand-name">Dra. Leticia López-Areal</span><span class="brand-desc">Clínica oftalmológica</span></span>
+        </a>
+        <p>Consulta de oftalmología en la Gran Vía de Bilbao desde 1982. Revisiones, diagnóstico y cirugía ocular con trato cercano.</p>
+        <p class="foot-contact"><a href="tel:+34944425098">944 42 50 98</a><a data-wa href="https://wa.me/34666845295" target="_blank" rel="noopener">Escríbenos por WhatsApp ↗</a><span>Gran Vía, 56 · Entreplanta, Dpto. 2 · 48011 Bilbao</span></p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <p class="micro">Horario</p>
+          <ul><li>Lunes a jueves<br>10:00–18:00</li><li>Viernes 10:00–13:00</li><li>Sábado y domingo cerrado</li></ul>
+        </div>
+        <div>
+          <p class="micro">La consulta</p>
+          <ul><li><a href="#doctora">La doctora</a></li><li><a href="#opiniones">Opiniones</a></li><li><a href="#visita">Tu visita</a></li><li><a href="#cita">Pedir cita</a></li></ul>
+        </div>
+        <div>
+          <p class="micro">Ubicación</p>
+          <ul><li>Gran Vía, 56</li><li>Barrio de Abando</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Gran%20V%C3%ADa%2056%2C%2048011%20Bilbao" target="_blank" rel="noopener">Cómo llegar ↗</a></li></ul>
+        </div>
+        <div>
+          <p class="micro">Especialidades</p>
+          <ul><li><a href="#tratamientos">Cataratas</a></li><li><a href="#tratamientos">Cirugía refractiva</a></li><li><a href="#tratamientos">Párpados</a></li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="foot-legal">© <span id="year">2026</span> Dra. Leticia López-Areal · Clínica oftalmológica · Registro sanitario RPS 11/00</p>
+  <div class="foot-shell"><p class="wordmark" id="wordmark" aria-hidden="true">LÓPEZ-AREAL</p></div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var clamp01 = function (v) { return Math.min(1, Math.max(0, v)); };
+  var TAU = Math.PI * 2;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var hasIO = 'IntersectionObserver' in window;
+  var today = new Date();
+
+  document.documentElement.lang = 'es';
+  try {
+    if (!document.querySelector('link[rel="icon"]')) {
+      var ico = document.createElement('link');
+      ico.rel = 'icon';
+      ico.href = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232D3574'/%3E%3Cpath fill='%23fff' d='M5 5h22v4.4H9.4v4.4H27v4.4H9.4v4.4H27V27H5z'/%3E%3C/svg%3E";
+      document.head.appendChild(ico);
+    }
+  } catch (err) {}
+
+  var years = today.getFullYear() - 1982;
+  var statYears = $('#stat-years');
+  statYears.dataset.count = years;
+  statYears.textContent = years;
+  statYears.previousElementSibling.textContent = years;
+  $('#year').textContent = today.getFullYear();
+
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      var t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  /* ================= MENÚ ================= */
+  var burger = $('#burger'), panel = $('#menu-panel'), menuOpen = false;
+  function setMenu(v, focusBack) {
+    menuOpen = v;
+    panel.classList.toggle('open', v);
+    panel.inert = !v;
+    burger.classList.toggle('is-open', v);
+    burger.setAttribute('aria-expanded', String(v));
+    burger.setAttribute('aria-label', v ? 'Cerrar menú' : 'Abrir menú');
+    document.documentElement.style.overflow = v ? 'hidden' : '';
+    if (!v && focusBack) burger.focus();
+  }
+  burger.addEventListener('click', function () { setMenu(!menuOpen); });
+  panel.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menuOpen) setMenu(false, true); });
+  var wideMQ = window.matchMedia('(min-width: 1024px)');
+  var onWide = function (e) { if (e.matches && menuOpen) setMenu(false); };
+  if (wideMQ.addEventListener) wideMQ.addEventListener('change', onWide); else if (wideMQ.addListener) wideMQ.addListener(onWide);
+
+  /* ================= OJO INTERACTIVO ================= */
+  var hero = $('#inicio'), eyeEl = $('#eye'), cv = $('#eye-canvas'), hit = $('#eye-hit'), cap = $('#eye-cap');
+  var ctx = cv.getContext('2d');
+  var dpr = 1, HW = 0, HH = 0;
+  var EC = { cx: 0, cy: 0, W: 400 };
+  var o = 0, oT = 0, b = 1, blinkT = -1, gx = 0, gy = 0, gxT = 0, gyT = 0, pp = 0.44, time = 0;
+  var hovering = false, prox = 0, pinned = false, focused = false, introOpen = 0;
+  var lastPT = finePointer ? 'mouse' : 'touch', lastLook = 0, raf = null, lastT = 0, heroVisible = true;
+  var introTimers = [], blinkTimer = null, saccTimer = null;
+  var irisC = null, irisPx = 0;
+  var rndU = [], rndL = [], r0 = mulberry32(11);
+  for (var i = 0; i < 40; i++) { rndU.push(r0()); rndL.push(r0()); }
+  var NU = 30, NL = 13;
+
+  cap.textContent = reduce ? 'Pulsa el ojo para abrirlo o cerrarlo'
+    : (finePointer ? 'Pasa el cursor por el ojo' : 'Toca el ojo para abrirlo');
+
+  function makeIris(R) {
+    var S = Math.ceil(R * 2) + 4, c = document.createElement('canvas');
+    c.width = c.height = S;
+    var g = c.getContext('2d'), rnd = mulberry32(7), k, a, rr;
+    g.translate(S / 2, S / 2);
+    g.save();
+    g.beginPath(); g.arc(0, 0, R, 0, TAU); g.clip();
+    var base = g.createRadialGradient(0, 0, 0, 0, 0, R);
+    base.addColorStop(0, '#A87A3C'); base.addColorStop(.3, '#C79B57'); base.addColorStop(.43, '#8292C2');
+    base.addColorStop(.58, '#5874C9'); base.addColorStop(.8, '#3A55AE'); base.addColorStop(.93, '#223582'); base.addColorStop(1, '#10184A');
+    g.fillStyle = base; g.fillRect(-R, -R, R * 2, R * 2);
+    var lw = Math.max(.6, R / 170);
+    g.lineCap = 'round';
+    for (k = 0; k < 1500; k++) {
+      a = rnd() * TAU;
+      var ra = R * (.3 + rnd() * .2), rb = R * (.8 + rnd() * .19), bend = (rnd() - .5) * .09, rm = (ra + rb) / 2;
+      var light = rnd() < .56;
+      g.strokeStyle = light ? 'rgba(192,210,252,' + (.06 + rnd() * .2).toFixed(3) + ')' : 'rgba(16,28,90,' + (.1 + rnd() * .26).toFixed(3) + ')';
+      g.lineWidth = lw * (.45 + rnd() * 1.1);
+      g.beginPath();
+      g.moveTo(Math.cos(a) * ra, Math.sin(a) * ra);
+      g.quadraticCurveTo(Math.cos(a + bend) * rm, Math.sin(a + bend) * rm, Math.cos(a + bend * .4) * rb, Math.sin(a + bend * .4) * rb);
+      g.stroke();
+    }
+    for (k = 0; k < 460; k++) {
+      a = rnd() * TAU;
+      var ia = R * (.2 + rnd() * .08), ib = R * (.4 + rnd() * .14);
+      g.strokeStyle = 'rgba(236,194,118,' + (.12 + rnd() * .26).toFixed(3) + ')';
+      g.lineWidth = lw * (.45 + rnd() * .8);
+      g.beginPath(); g.moveTo(Math.cos(a) * ia, Math.sin(a) * ia); g.lineTo(Math.cos(a) * ib, Math.sin(a) * ib); g.stroke();
+    }
+    g.beginPath();
+    for (k = 0; k <= 360; k++) {
+      a = k / 360 * TAU;
+      rr = R * (.47 + .03 * Math.sin(a * 9 + 1.3) + .018 * Math.sin(a * 23 + .4) + (rnd() - .5) * .014);
+      if (k === 0) g.moveTo(Math.cos(a) * rr, Math.sin(a) * rr); else g.lineTo(Math.cos(a) * rr, Math.sin(a) * rr);
+    }
+    g.closePath();
+    g.strokeStyle = 'rgba(18,26,78,.28)'; g.lineWidth = lw * 5; g.stroke();
+    g.strokeStyle = 'rgba(232,202,142,.6)'; g.lineWidth = lw * 1.6; g.stroke();
+    for (k = 0; k < 64; k++) {
+      a = rnd() * TAU; rr = R * (.53 + rnd() * .32);
+      var l = R * (.022 + rnd() * .05);
+      g.save(); g.rotate(a); g.translate(rr, 0);
+      g.beginPath(); g.ellipse(0, 0, l, l * .42, 0, 0, TAU);
+      g.fillStyle = 'rgba(10,16,62,' + (.16 + rnd() * .3).toFixed(3) + ')'; g.fill();
+      g.restore();
+    }
+    var limb = g.createRadialGradient(0, 0, R * .78, 0, 0, R);
+    limb.addColorStop(0, 'rgba(8,12,44,0)'); limb.addColorStop(.65, 'rgba(8,12,44,.42)'); limb.addColorStop(1, 'rgba(5,8,34,.96)');
+    g.fillStyle = limb; g.fillRect(-R, -R, R * 2, R * 2);
+    g.restore();
+    return c;
+  }
+
+  function bz(p0, p1, p2, p3, t) { var u = 1 - t; return u * u * u * p0 + 3 * u * u * t * p1 + 3 * u * t * t * p2 + t * t * t * p3; }
+  function bzd(p0, p1, p2, p3, t) { var u = 1 - t; return 3 * u * u * (p1 - p0) + 6 * u * t * (p2 - p1) + 3 * t * t * (p3 - p2); }
+
+  function draw() {
+    var W = EC.W, cx = EC.cx, cy = EC.cy;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, HW, HH);
+    var oe = clamp01(o * b);
+    var Lx = cx - .5 * W, Ly = cy + .012 * W, Rx = cx + .5 * W, Ry = cy - .018 * W;
+    var c1 = cx - .2 * W, c2 = cx + .2 * W;
+    var yu = cy + (.07 - .44 * oe) * W, yl = cy + (.07 + .15 * oe) * W;
+    var R = .195 * W;
+
+    function upperPath() { ctx.moveTo(Lx, Ly); ctx.bezierCurveTo(c1, yu, c2, yu, Rx, Ry); }
+    function lowerPath() { ctx.moveTo(Lx, Ly); ctx.bezierCurveTo(c1, yl, c2, yl, Rx, Ry); }
+
+    if (oe > .004) {
+      ctx.save();
+      ctx.beginPath(); ctx.moveTo(Lx, Ly); ctx.bezierCurveTo(c1, yu, c2, yu, Rx, Ry); ctx.bezierCurveTo(c2, yl, c1, yl, Lx, Ly); ctx.closePath();
+      ctx.clip();
+
+      var sg = ctx.createRadialGradient(cx + gx * .06 * W, cy + .02 * W, .02 * W, cx, cy, .6 * W);
+      sg.addColorStop(0, '#FFFFFF'); sg.addColorStop(.45, '#F1F3FB'); sg.addColorStop(.78, '#D5DAEE'); sg.addColorStop(1, '#A9B2D6');
+      ctx.fillStyle = sg; ctx.fillRect(cx - .6 * W, cy - .5 * W, 1.2 * W, W);
+
+      var car = ctx.createRadialGradient(Lx + .03 * W, Ly, 0, Lx + .03 * W, Ly, .065 * W);
+      car.addColorStop(0, 'rgba(214,128,144,.85)'); car.addColorStop(1, 'rgba(214,128,144,0)');
+      ctx.fillStyle = car; ctx.fillRect(Lx - .1 * W, Ly - .1 * W, .2 * W, .2 * W);
+
+      var ix = cx + gx * .17 * W, iy = cy + gy * .065 * W + .012 * W;
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.scale(1 - .1 * Math.abs(gx), 1 - .04 * Math.abs(gy));
+      var ring = ctx.createRadialGradient(0, 0, R * .96, 0, 0, R * 1.14);
+      ring.addColorStop(0, 'rgba(22,28,78,.42)'); ring.addColorStop(1, 'rgba(22,28,78,0)');
+      ctx.fillStyle = ring; ctx.beginPath(); ctx.arc(0, 0, R * 1.14, 0, TAU); ctx.fill();
+      var s = irisC.width / dpr;
+      ctx.drawImage(irisC, -s / 2, -s / 2, s, s);
+      var pr = (pp + .01 * Math.sin(time * 1.6) * oe) * R;
+      var pg = ctx.createRadialGradient(0, 0, 0, 0, 0, pr * 1.16);
+      pg.addColorStop(0, '#03040C'); pg.addColorStop(.8, '#03040C'); pg.addColorStop(.87, 'rgba(10,8,22,.8)'); pg.addColorStop(1, 'rgba(10,8,22,0)');
+      ctx.fillStyle = pg; ctx.beginPath(); ctx.arc(0, 0, pr * 1.16, 0, TAU); ctx.fill();
+      ctx.restore();
+
+      var sh = ctx.createRadialGradient(ix - .2 * R, iy - .25 * R, 0, ix - .2 * R, iy - .25 * R, 1.1 * R);
+      sh.addColorStop(0, 'rgba(255,255,255,.12)'); sh.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = sh; ctx.beginPath(); ctx.arc(ix - .2 * R, iy - .25 * R, 1.1 * R, 0, TAU); ctx.fill();
+      ctx.save();
+      ctx.translate(ix - .34 * R - gx * .05 * R, iy - .37 * R - gy * .04 * R);
+      ctx.rotate(-.4); ctx.scale(1, .7);
+      var hg = ctx.createRadialGradient(0, 0, 0, 0, 0, .18 * R);
+      hg.addColorStop(0, 'rgba(255,255,255,.95)'); hg.addColorStop(.55, 'rgba(255,255,255,.82)'); hg.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = hg; ctx.beginPath(); ctx.arc(0, 0, .18 * R, 0, TAU); ctx.fill();
+      ctx.restore();
+      ctx.fillStyle = 'rgba(255,255,255,.5)';
+      ctx.beginPath(); ctx.arc(ix + .3 * R, iy + .3 * R, .045 * R, 0, TAU); ctx.fill();
+
+      ctx.save();
+      ctx.shadowColor = 'rgba(5,8,34,.62)'; ctx.shadowBlur = .075 * W * dpr; ctx.shadowOffsetY = .02 * W * dpr;
+      ctx.fillStyle = '#05081F';
+      ctx.beginPath(); ctx.moveTo(Lx - .1 * W, Ly); ctx.lineTo(Lx, Ly); ctx.bezierCurveTo(c1, yu, c2, yu, Rx, Ry);
+      ctx.lineTo(Rx + .1 * W, Ry); ctx.lineTo(Rx + .1 * W, cy - W); ctx.lineTo(Lx - .1 * W, cy - W); ctx.closePath(); ctx.fill();
+      ctx.shadowColor = 'rgba(5,8,34,.3)'; ctx.shadowBlur = .035 * W * dpr; ctx.shadowOffsetY = -.008 * W * dpr;
+      ctx.beginPath(); ctx.moveTo(Lx - .1 * W, Ly); ctx.lineTo(Lx, Ly); ctx.bezierCurveTo(c1, yl, c2, yl, Rx, Ry);
+      ctx.lineTo(Rx + .1 * W, Ry); ctx.lineTo(Rx + .1 * W, cy + W); ctx.lineTo(Lx - .1 * W, cy + W); ctx.closePath(); ctx.fill();
+      ctx.restore();
+
+      ctx.lineCap = 'round';
+      ctx.strokeStyle = 'rgba(214,138,152,.55)'; ctx.lineWidth = .012 * W;
+      ctx.beginPath(); lowerPath(); ctx.stroke();
+      ctx.save(); ctx.translate(0, -.007 * W);
+      ctx.strokeStyle = 'rgba(255,255,255,.55)'; ctx.lineWidth = .0028 * W;
+      ctx.beginPath(); lowerPath(); ctx.stroke();
+      ctx.restore();
+      ctx.restore();
+    }
+
+    ctx.lineCap = 'round';
+    var k = (.1 + .02 * oe) * W;
+    ctx.strokeStyle = 'rgba(238,241,255,' + (.18 + .12 * oe).toFixed(3) + ')'; ctx.lineWidth = .0055 * W;
+    ctx.beginPath(); ctx.moveTo(cx - .42 * W, Ly - k * .5); ctx.bezierCurveTo(c1, yu - k, c2, yu - k, cx + .43 * W, Ry - k * .6); ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(238,241,255,' + (.5 * oe + .08).toFixed(3) + ')'; ctx.lineWidth = .006 * W;
+    ctx.beginPath(); lowerPath(); ctx.stroke();
+    ctx.strokeStyle = '#EEF1FF'; ctx.lineWidth = .0105 * W;
+    ctx.beginPath(); upperPath(); ctx.stroke();
+
+    var cvU = Math.cos(Math.PI * (1 - oe) * .94), n, t, bxp, byp, dx, dy, dl, nx, ny, sw, len, tipX, tipY, cX, cY, ax, ay, al, px, py, w0;
+    ctx.fillStyle = '#EEF1FF';
+    ctx.beginPath();
+    for (n = 0; n < NU; n++) {
+      t = .1 + .86 * n / (NU - 1) + (rndU[n] - .5) * .012;
+      bxp = bz(Lx, c1, c2, Rx, t); byp = bz(Ly, yu, yu, Ry, t);
+      dx = bzd(Lx, c1, c2, Rx, t); dy = bzd(Ly, yu, yu, Ry, t); dl = Math.hypot(dx, dy) || 1; dx /= dl; dy /= dl;
+      nx = dy; ny = -dx;
+      sw = .18 + .7 * (t - .42);
+      len = W * (.04 + .062 * Math.pow(Math.sin(Math.PI * t), 1.3)) * (.82 + .36 * rndU[n]) * (.86 + .28 * t);
+      tipX = bxp + (nx * cvU + dx * sw) * len; tipY = byp + (ny * cvU + dy * sw) * len;
+      cX = bxp + (nx * cvU * .7 + dx * sw * .25) * len; cY = byp + (ny * cvU * .7 + dy * sw * .25) * len;
+      ax = cX - bxp; ay = cY - byp; al = Math.hypot(ax, ay) || 1; px = -ay / al; py = ax / al;
+      w0 = W * .0042 * (.8 + .4 * rndU[(n + 7) % NU]);
+      ctx.moveTo(bxp + px * w0, byp + py * w0);
+      ctx.quadraticCurveTo(cX + px * w0 * .4, cY + py * w0 * .4, tipX, tipY);
+      ctx.quadraticCurveTo(cX - px * w0 * .4, cY - py * w0 * .4, bxp - px * w0, byp - py * w0);
+      ctx.closePath();
+    }
+    ctx.fill();
+
+    var cvL = .3 + .7 * oe;
+    ctx.fillStyle = 'rgba(238,241,255,' + (.12 + .5 * oe).toFixed(3) + ')';
+    ctx.beginPath();
+    for (n = 0; n < NL; n++) {
+      t = .28 + .64 * n / (NL - 1) + (rndL[n] - .5) * .02;
+      bxp = bz(Lx, c1, c2, Rx, t); byp = bz(Ly, yl, yl, Ry, t);
+      dx = bzd(Lx, c1, c2, Rx, t); dy = bzd(Ly, yl, yl, Ry, t); dl = Math.hypot(dx, dy) || 1; dx /= dl; dy /= dl;
+      nx = -dy; ny = dx;
+      sw = .12 + .55 * (t - .5);
+      len = W * .024 * (.7 + .6 * t) * (.8 + .4 * rndL[n]);
+      tipX = bxp + (nx * cvL + dx * sw) * len; tipY = byp + (ny * cvL + dy * sw) * len;
+      ax = tipX - bxp; ay = tipY - byp; al = Math.hypot(ax, ay) || 1; px = -ay / al; py = ax / al;
+      w0 = W * .0026;
+      ctx.moveTo(bxp + px * w0, byp + py * w0); ctx.lineTo(tipX, tipY); ctx.lineTo(bxp - px * w0, byp - py * w0); ctx.closePath();
+    }
+    ctx.fill();
+
+    eyeEl.style.setProperty('--open', oe.toFixed(3));
+  }
+
+  function layoutEye() {
+    var hr = hero.getBoundingClientRect();
+    HW = hr.width; HH = hr.height;
+    dpr = Math.min(2, window.devicePixelRatio || 1);
+    cv.width = Math.round(HW * dpr); cv.height = Math.round(HH * dpr);
+    cv.style.width = HW + 'px'; cv.style.height = HH + 'px';
+    // cajas de maquetación sin transformaciones (las animaciones de entrada no alteran la medida)
+    var tr = box($('#hero-title')), lr = box($('#hero-lead')), cr = box($('#hero-cta')), sr = box($('#hero-stats'));
+    var ctaKids = $$('#hero-cta > *').filter(function (el) { return el.offsetWidth > 0; });
+    var ctaRight = ctaKids.reduce(function (m, el) { return Math.max(m, box(el).right); }, cr.left);
+    var pad = parseFloat(getComputedStyle(hero).paddingLeft) || 24, x0, x1, y0, y1;
+    if (HW > 900) {
+      x0 = Math.max(lr.right, ctaRight) + 40; x1 = HW - pad;
+      y0 = tr.bottom + 4; y1 = sr.top - 54;
+    } else {
+      x0 = pad; x1 = HW - pad;
+      y0 = cr.bottom + 8; y1 = sr.top - 14;
+    }
+    var bw = Math.max(160, x1 - x0), bh = Math.max(110, y1 - y0);
+    EC.W = Math.max(170, Math.min(bw * .96, bh / .6, 980));
+    EC.cx = (x0 + x1) / 2;
+    EC.cy = (y0 + y1) / 2 + .08 * EC.W;
+    eyeEl.style.setProperty('--ex', EC.cx.toFixed(1) + 'px');
+    eyeEl.style.setProperty('--ey', EC.cy.toFixed(1) + 'px');
+    eyeEl.style.setProperty('--ew', EC.W.toFixed(1) + 'px');
+    var need = .195 * EC.W * dpr;
+    if (!irisC || Math.abs(need - irisPx) / irisPx > .06) { irisC = makeIris(need); irisPx = need; }
+    draw();
+    capFit();
+  }
+
+  function box(el) {
+    var x = 0, y = 0, e = el;
+    while (e && e !== hero) { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent; }
+    return { left: x, top: y, right: x + el.offsetWidth, bottom: y + el.offsetHeight };
+  }
+
+  function capFit() {
+    cap.style.visibility = '';
+    var c = cap.getBoundingClientRect();
+    var hitSomething = $$('.stat').concat([$('#hero-cta')]).some(function (el) {
+      var r = el.getBoundingClientRect();
+      return c.bottom > r.top - 6 && c.top < r.bottom + 6 && c.right > r.left && c.left < r.right;
+    });
+    if (hitSomething || c.bottom > hero.getBoundingClientRect().bottom - 4) cap.style.visibility = 'hidden';
+  }
+
+  function tick(now) {
+    raf = null;
+    var dt = Math.min(.05, Math.max(.001, (now - lastT) / 1000)); lastT = now;
+    time += dt;
+    o += (oT - o) * (1 - Math.exp(-dt * (oT > o ? 8.5 : 6.5)));
+    if (Math.abs(oT - o) < .002) o = oT;
+    if (blinkT >= 0) {
+      blinkT += dt;
+      if (blinkT < .085) b = 1 - blinkT / .085;
+      else if (blinkT < .29) { var q = (blinkT - .085) / .205; b = 1 - Math.pow(1 - q, 3); }
+      else { b = 1; blinkT = -1; }
+    }
+    var kg = 1 - Math.exp(-dt * 15);
+    gx += (gxT - gx) * kg; gy += (gyT - gy) * kg;
+    var oe = o * b;
+    var pT = .45 - .17 * oe;
+    pp += (pT - pp) * (1 - Math.exp(-dt * 3.2));
+    draw();
+    var busy = Math.abs(oT - o) > .001 || blinkT >= 0 || Math.abs(gxT - gx) > .002 || Math.abs(gyT - gy) > .002 || Math.abs(pT - pp) > .002 || o > .02;
+    if (busy && heroVisible) raf = requestAnimationFrame(tick);
+  }
+  function wake() {
+    if (reduce) { draw(); return; }
+    if (raf === null && heroVisible) { lastT = performance.now(); raf = requestAnimationFrame(tick); }
+  }
+  function blink() {
+    if (reduce || blinkT >= 0) return;
+    blinkT = 0; wake();
+  }
+  function scheduleBlink() {
+    clearTimeout(blinkTimer);
+    if (reduce) return;
+    blinkTimer = setTimeout(function () {
+      if (o * b > .6 && heroVisible && !document.hidden) {
+        blink();
+        if (Math.random() < .2) setTimeout(blink, 340);
+      }
+      scheduleBlink();
+    }, 2600 + Math.random() * 4200);
+  }
+  function scheduleSaccade() {
+    clearTimeout(saccTimer);
+    if (reduce) return;
+    saccTimer = setTimeout(function () {
+      if (o > .5 && !hovering && performance.now() - lastLook > 1800 && heroVisible) {
+        gxT = (Math.random() - .5) * .9; gyT = (Math.random() - .5) * .5; wake();
+      }
+      scheduleSaccade();
+    }, 1300 + Math.random() * 1400);
+  }
+  function updateTarget() {
+    var open = reduce ? (pinned ? 0 : 1) : ((pinned || focused || hovering) ? 1 : Math.max(prox, introOpen));
+    oT = open;
+    if (reduce) { o = oT; }
+    hit.setAttribute('aria-pressed', String(reduce ? !pinned : (pinned || hovering || focused)));
+    wake();
+  }
+  function look(x, y) {
+    var dx = (x - EC.cx) / (EC.W * .9), dy = (y - EC.cy) / (EC.W * .55), m = Math.hypot(dx, dy);
+    if (m > 1) { dx /= m; dy /= m; }
+    if (!reduce) { gxT = dx; gyT = dy; }
+    lastLook = performance.now();
+    wake();
+  }
+  function cancelIntro() {
+    if (!introTimers.length) return;
+    introTimers.forEach(clearTimeout); introTimers = []; introOpen = 0;
+  }
+  function heroPoint(e) { var r = hero.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
+
+  hero.addEventListener('pointermove', function (e) {
+    lastPT = e.pointerType;
+    var p = heroPoint(e);
+    look(p[0], p[1]);
+    if (e.pointerType === 'mouse' || e.pointerType === 'pen') {
+      if (reduce) return;
+      var dx = (p[0] - EC.cx) / (EC.W * .5), dy = (p[1] - EC.cy) / (EC.W * .3), d = Math.hypot(dx, dy);
+      hovering = d < 1;
+      prox = hovering ? 1 : (d < 1.9 ? .42 * (1.9 - d) / .9 : 0);
+      if (prox > 0) cancelIntro();
+      updateTarget();
+    }
+  });
+  hero.addEventListener('pointerleave', function (e) {
+    if (e.pointerType !== 'mouse' && e.pointerType !== 'pen') return;
+    hovering = false; prox = 0; gxT = 0; gyT = 0; updateTarget();
+  });
+  hero.addEventListener('pointerdown', function (e) {
+    lastPT = e.pointerType;
+    if (e.pointerType !== 'mouse') { var p = heroPoint(e); look(p[0], p[1]); }
+  });
+  hit.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') lastPT = 'key'; });
+  hit.addEventListener('click', function () {
+    cancelIntro();
+    if (lastPT === 'mouse' && !reduce) { blink(); return; }
+    pinned = !pinned;
+    if (lastPT === 'key') focused = false;
+    if (!finePointer && !reduce) cap.textContent = pinned ? 'Toca el ojo para cerrarlo' : 'Toca el ojo para abrirlo';
+    updateTarget();
+  });
+  hit.addEventListener('focus', function () {
+    var kb = false;
+    try { kb = hit.matches(':focus-visible'); } catch (err) {}
+    if (kb && !reduce) { focused = true; cancelIntro(); updateTarget(); }
+  });
+  hit.addEventListener('blur', function () { if (focused) { focused = false; updateTarget(); } });
+
+  function intro() {
+    if (reduce) return;
+    var seq = [
+      [900, function () { introOpen = 1; updateTarget(); }],
+      [1900, function () { gxT = -.72; gyT = .06; wake(); }],
+      [2600, function () { gxT = .68; gyT = -.14; wake(); }],
+      [3300, function () { gxT = 0; gyT = 0; blink(); }],
+      [4400, function () { introOpen = 0; introTimers = []; updateTarget(); }]
+    ];
+    seq.forEach(function (s) { introTimers.push(setTimeout(s[1], s[0])); });
+  }
+
+  if (reduce) { o = oT = 1; pp = .34; }
+  layoutEye();
+  setTimeout(capFit, 1700);
+  intro();
+  scheduleBlink();
+  scheduleSaccade();
+  if (hasIO) {
+    new IntersectionObserver(function (en) {
+      heroVisible = en[0].isIntersecting;
+      if (heroVisible) wake();
+    }).observe(hero);
+  }
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) wake(); });
+
+  /* ================= TABLA DE OPTOTIPOS ================= */
+  var chart = $('#chart'), chartFig = $('#chart-fig'), chartChip = $('#chart-chip');
+  (function buildChart() {
+    var rows = [[.1, 'E'], [.2, 'MW'], [.3, '3EM'], [.4, 'W3ME'], [.5, 'EMW3E'], [.6, '3WEM3W'], [.8, 'ME3WME3'], [1, 'WM3EW3ME']];
+    var base = 9.2, y = 0, maxW = 0, info = [], out = '';
+    rows.forEach(function (r) {
+      var s = base / r[0], n = r[1].length, gap = s * .85, w = n * s + (n - 1) * gap;
+      maxW = Math.max(maxW, w);
+      info.push({ s: s, n: n, gap: gap, w: w, y: y, L: r[1], a: r[0] });
+      y += s + Math.max(s * .55, 11);
+    });
+    var lx = maxW / 2 + 30;
+    info.forEach(function (r) {
+      var x = -r.w / 2;
+      for (var k = 0; k < r.n; k++) {
+        out += '<use href="#o' + r.L[k] + '" x="' + (x + k * (r.s + r.gap)).toFixed(2) + '" y="' + r.y.toFixed(2) + '" width="' + r.s.toFixed(2) + '" height="' + r.s.toFixed(2) + '"/>';
+      }
+      out += '<text x="' + lx + '" y="' + (r.y + r.s / 2 + 3.6).toFixed(2) + '" class="c-lbl">' + r.a.toFixed(1).replace('.', ',') + '</text>';
+    });
+    var dy = y + 8, dw = 64, dh = 34;
+    out += '<rect x="' + (-dw) + '" y="' + dy + '" width="' + dw + '" height="' + dh + '" style="fill:var(--duo-r)"/>';
+    out += '<rect x="0" y="' + dy + '" width="' + dw + '" height="' + dh + '" style="fill:var(--duo-g)"/>';
+    out += '<use href="#oE" x="' + (-dw / 2 - 6) + '" y="' + (dy + dh / 2 - 6) + '" width="12" height="12" fill="#101223"/>';
+    out += '<use href="#o3" x="' + (dw / 2 - 6) + '" y="' + (dy + dh / 2 - 6) + '" width="12" height="12" fill="#101223"/>';
+    var vx = -maxW / 2 - 40, vw = maxW + 110, vh = dy + dh + 20;
+    chart.setAttribute('viewBox', vx.toFixed(1) + ' -14 ' + vw.toFixed(1) + ' ' + vh.toFixed(1));
+    chart.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    chart.innerHTML = '<style>.c-lbl{font:500 9.5px var(--font-mono);fill:var(--muted);letter-spacing:.04em}</style><g style="fill:var(--ink-max)">' + out + '</g>';
+  })();
+
+  /* ================= SCROLL (un solo rAF) ================= */
+  var statement = $('#statement'), words = $$('#statement .w');
+  var canMix = !!(window.CSS && CSS.supports && CSS.supports('color', 'color-mix(in oklab, #000000 50%, #9a9a9a)'));
+  function wordColor(l) {
+    return canMix ? 'color-mix(in oklab, var(--ink-max) ' + (l * 100).toFixed(1) + '%, var(--muted))' : (l > .5 ? 'var(--ink-max)' : 'var(--muted)');
+  }
+  function fillWords(p) { var head = p * words.length; words.forEach(function (w, i) { w.style.color = wordColor(clamp01(head - i)); }); }
+  function progress(el) {
+    var r = el.getBoundingClientRect();
+    return clamp01((innerHeight * .9 - r.top) / (innerHeight * .45 + r.height * .5));
+  }
+  function focusChart(p) {
+    var e = Math.pow(1 - p, 1.2);
+    chart.style.filter = e > .01 ? 'blur(' + (7 * e).toFixed(2) + 'px)' : 'none';
+    chart.style.transform = 'scale(' + (1 + .05 * e).toFixed(4) + ')';
+    chartChip.classList.toggle('done', p > .97);
+  }
+  var ticking = false;
+  function scrollFrame() { ticking = false; fillWords(progress(statement)); focusChart(progress(chartFig)); }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(scrollFrame); } }
+  if (reduce) { fillWords(1); focusChart(1); }
+  else { window.addEventListener('scroll', onScroll, { passive: true }); scrollFrame(); }
+
+  /* ================= APARICIONES (solo lo que está bajo el pliegue) ================= */
+  $$('[data-stagger]').forEach(function (g) { Array.prototype.forEach.call(g.children, function (c, i) { c.style.setProperty('--i', i); }); });
+  if (!reduce && hasIO) {
+    var pending = $$('[data-reveal],[data-stagger]').filter(function (el) { return el.getBoundingClientRect().top > innerHeight * .96; });
+    pending.forEach(function (el) { el.classList.add('pre'); });
+    var ioFired = false;
+    var rio = new IntersectionObserver(function (entries, obs) {
+      ioFired = true;
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.remove('pre'); obs.unobserve(en.target); } });
+    }, { threshold: .15 });
+    pending.forEach(function (el) { rio.observe(el); });
+    setTimeout(function () { if (!ioFired) pending.forEach(function (el) { el.classList.remove('pre'); }); }, 1600);
+  }
+
+  /* ================= CONTADORES ================= */
+  function fmt(el, v) {
+    var d = +(el.dataset.dec || 0);
+    return v.toLocaleString('es-ES', { minimumFractionDigits: d, maximumFractionDigits: d });
+  }
+  $$('[data-count]').forEach(function (el) {
+    var end = +el.dataset.count;
+    if (reduce) { el.textContent = fmt(el, end); return; }
+    el.textContent = fmt(el, 0);
+    setTimeout(function () {
+      var t0 = performance.now();
+      (function step(now) {
+        var t = clamp01((now - t0) / 1300);
+        el.textContent = fmt(el, end * (1 - Math.pow(1 - t, 3)));
+        if (t < 1) requestAnimationFrame(step);
+      })(t0);
+    }, 820);
+  });
+
+  /* ================= CARRIL DE PASOS ================= */
+  var rail = $('#visit-rail'), railBtns = $('#rail-btns'), prevB = $('[data-dir="prev"]'), nextB = $('[data-dir="next"]');
+  function railState() {
+    var max = rail.scrollWidth - rail.clientWidth;
+    railBtns.hidden = max < 4;
+    prevB.disabled = rail.scrollLeft < 4;
+    nextB.disabled = rail.scrollLeft > max - 4;
+  }
+  [prevB, nextB].forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var d = rail.firstElementChild.getBoundingClientRect().width + parseFloat(getComputedStyle(rail).columnGap || 20);
+      rail.scrollBy({ left: btn.dataset.dir === 'next' ? d : -d, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  });
+  rail.addEventListener('scroll', railState, { passive: true });
+  railState();
+
+  /* ================= CITA POR WHATSAPP ================= */
+  var form = $('#cita-form'), msg = $('#form-msg'), waBtn = $('#f-submit'),
+      nombre = $('#f-nombre'), motivo = $('#f-motivo'), franja = $('#f-franja');
+  var WA = (form.dataset.whatsapp || '34666845295').replace(/\D/g, '');
+  var msgDefault = msg.innerHTML;
+  $$('[data-wa]').forEach(function (a) { a.href = 'https://wa.me/' + WA; });
+
+  function optText(sel) { return sel.value ? sel.options[sel.selectedIndex].text : ''; }
+  function waText() {
+    var lines = ['Hola, quiero pedir cita en la consulta de la Dra. López-Areal.'];
+    var n = nombre.value.trim().replace(/\s+/g, ' ');
+    if (n) lines.push('Nombre: ' + n);
+    if (motivo.value) lines.push('Motivo: ' + optText(motivo));
+    if (franja.value) lines.push('Franja preferida: ' + optText(franja));
+    return lines.join('\n');
+  }
+  function syncWa() { waBtn.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(waText()); }
+  function say(text, kind, field) {
+    msg.textContent = text;
+    msg.className = 'book-note' + (kind ? ' ' + kind : '');
+    $$('.field', form).forEach(function (f) { f.removeAttribute('aria-invalid'); });
+    if (field) { var f = $(field); f.setAttribute('aria-invalid', 'true'); f.focus(); }
+  }
+  function resetNote() { msg.className = 'book-note'; msg.innerHTML = msgDefault; }
+
+  $$('.tile[data-motivo]').forEach(function (t) {
+    t.addEventListener('click', function () { motivo.value = t.dataset.motivo; syncWa(); });
+  });
+  $$('.field', form).forEach(function (f) {
+    ['input', 'change'].forEach(function (type) {
+      f.addEventListener(type, function () {
+        syncWa();
+        if (f.getAttribute('aria-invalid')) { f.removeAttribute('aria-invalid'); resetNote(); }
+      });
+    });
+  });
+  // El botón es un enlace real (funciona también donde se bloquean las ventanas emergentes);
+  // solo se detiene si falta el nombre.
+  waBtn.addEventListener('click', function (e) {
+    syncWa();
+    var n = nombre.value.trim();
+    if (!n) { e.preventDefault(); say('Escribe tu nombre para que sepamos quién pide la cita.', 'err', '#f-nombre'); return; }
+    say('Listo, ' + n.split(/\s+/)[0] + ': tienes el mensaje preparado en WhatsApp. Pulsa enviar y te respondemos con día y hora. Si no se ha abierto, llámanos al 944 42 50 98.', 'ok');
+  });
+  // Pulsar Intro en el formulario equivale a pulsar el botón de WhatsApp
+  form.addEventListener('submit', function (e) { e.preventDefault(); waBtn.click(); });
+  syncWa();
+
+  /* ================= LOGOTIPO GRANDE DEL PIE ================= */
+  var wm = $('#wordmark');
+  function fitWordmark() {
+    wm.style.fontSize = '';
+    var base = parseFloat(getComputedStyle(wm).fontSize), range = document.createRange();
+    range.selectNodeContents(wm);
+    var textW = range.getBoundingClientRect().width, box = wm.clientWidth;
+    if (textW > 0 && box > 0) wm.style.fontSize = Math.min(base * box / textW * .995, 220) + 'px';
+  }
+  fitWordmark();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { fitWordmark(); layoutEye(); railState(); });
+
+  /* ================= REDIMENSIONADO ================= */
+  var rz = null;
+  window.addEventListener('resize', function () {
+    if (rz !== null) return;
+    rz = requestAnimationFrame(function () { rz = null; layoutEye(); fitWordmark(); railState(); if (!reduce) onScroll(); });
+  });
+})();
+</script>
+
+</body>
+</html>
